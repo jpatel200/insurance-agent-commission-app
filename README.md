@@ -40,7 +40,8 @@ Header Parameter: Content-Type: application/json
 			   { "agentName": "SuperAgent_C", "commission" : 0.0225}
 			]
 	}
-  }```
+  }
+ ```
   
   
 2. WebService will compute agents commission and responds with commission summary payload
