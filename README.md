@@ -1,4 +1,4 @@
-# Policy Commission Calculator Application
+# Policy Commission Calculator
 Insurance policy commission calculator service for computing agents commission.
 
 
