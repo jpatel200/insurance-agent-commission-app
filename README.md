@@ -5,15 +5,15 @@ Policy commission calculator service for computing agents' commissions.
 # Installation Instructions
 ## To run the application:
 
-1. Clone the projecct git repository using  git clone command.
+1. Clone the project git repository using  git clone command
 
 	git clone https://github.com/jpatel200/insurance-agent-commission-app.git
 	
 2. Navigate to the project root directory
-3. Run “npm install” from within project root directory to install application dependencies
+3. Run “npm install” from within the project root directory to install application dependencies
 4. Run “npm test” to run through the unit tests
-5. Run “npm start” to run the application as RestFul service hosted on express server.
-6. Run “node standalone.js” to run the program in standalone mode. This will use the given data (policy amount, agent hierarchy, commission plan) and computes commission summary.
+5. Run “npm start” to run the application as RestFul service hosted on an express server.
+6. Run “node standalone.js” to run the program in a standalone mode. This will use the given data sets : policy amount, agent hierarchy, commission plan and computes commission summary.
 
 ## WebService detail:
 
@@ -58,31 +58,33 @@ Header Parameter: Content-Type: application/json
 **jsdoc**: contains documentation of the project
 
 **factories**: contains factory classes for creating commission plans
+
 **models**: contains entity base classes for holding data e.g. Agent, Policy, Agent Hierarchy
+
 **public**: contains static contents for the project
+
 **routes**: houses webservice routing detail
+
 **server**: contains module to run express web server
+
 **service**: houses services and controller modules
+
 **tests** : houses all unit tests files for the application
+
 **app.js** : module contains code to bootstrap webservice
+
 **package.json** : Houses app of the dependencies and scripts.
 
 
 # Code Documentation
 
-Application code is documented using JSDOC annotations. The document is generated in the rich html format using JSDOC node module. 
+Application code is documented using JSDOC annotations. The document is generated in the rich html format using **jsdoc** node module. 
 
-The documentation exists within the project structure in the jsdoc folder. The revised code documentation can be generated using “npm run jsdoc” script. The script is added into the package.json file to generate the documentation for the project.
-
+The documentation exists within the project structure in the **jsdoc folder:https://github.com/jpatel200/insurance-agent-commission-app/tree/master/jsdoc**. The revised code documentation can be generated using “npm run jsdoc” script. The script is added into the package.json file to generate the documentation for the project.
  
-
-
-
-
 # Class Diagram
 Class diagram for the application is available in the "User Guide.docx" folder located in the root directory of the project.
 ![Policy Commission Calculator Class Diagram](https://github.com/jpatel200/insurance-agent-commission-app/ClassDiagram.jpg)
-
  
 # Assumptions and Design Considerations
 
