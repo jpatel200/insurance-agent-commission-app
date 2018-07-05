@@ -24,6 +24,8 @@ Header Parameter: Content-Type: application/json
 ## To test the WebService:
 
 1. Using REST Client tool ( e.g. Postman ) Submit POST request to endpoint “localhost:3000/api/v.1.0/policy” using request body:
+
+```
 {
 "policy" : {
 "commissionPlan" : "B",
@@ -38,8 +40,12 @@ Header Parameter: Content-Type: application/json
 			   { "agentName": "SuperAgent_C", "commission" : 0.0225}
 			]
 	}
-  }
+  }```
+  
+  
 2. WebService will compute agents commission and responds with commission summary payload
+
+```
 {
     "commissions": {
         "sellingAgent": 1400,
@@ -48,8 +54,11 @@ Header Parameter: Content-Type: application/json
         "SuperAgent_C": 0
     }
 }
+```
 
 # Project Structure
+
+Below are the list of folders with in the project directory and their content type.
 
 **Insurance-agent-commission-app**: root directory
 
