@@ -1,5 +1,5 @@
 # Policy Commission Calculator Application
-Policy commission calculator service for computing agents' commissions.
+Policy commission calculator service for computing agents commissions.
 
 
 # Installation Instructions
@@ -12,18 +12,18 @@ Policy commission calculator service for computing agents' commissions.
 2. Navigate to the project root directory
 3. Run “npm install” from within the project root directory to install application dependencies
 4. Run “npm test” to run through the unit tests
-5. Run “npm start” to run the application as RestFul service hosted on an express server.
+5. Run “npm start” to run the application as RESTFul service hosted on an express server.
 6. Run “node standalone.js” to run the program in a standalone mode. This will use the given data sets : policy amount, agent hierarchy, commission plan and computes commission summary.
 
 ## WebService detail:
 
-Service endpoint: localhost:3000/api/v.1.0/policy
-Method: POST
-Header Parameter: Content-Type: application/json
+Service endpoint: http://localhost:3000/api/v.1.0/policy  
+Method: POST  
+Header Parameter: Content-Type: application/json  
 
 ## To test the WebService:
 
-1. Using REST Client tool ( e.g. Postman ) Submit POST request to endpoint “localhost:3000/api/v.1.0/policy” using request body:
+1. Using REST Client tool ( e.g. Postman ) Submit POST request to endpoint “http://localhost:3000/api/v.1.0/policy” using request body:
 
 ```
 {
@@ -93,7 +93,8 @@ Application code is documented using JSDOC annotations. The document is generate
 The documentation exists within the project structure in the **jsdoc folder:https://github.com/jpatel200/insurance-agent-commission-app/tree/master/jsdoc**. The revised code documentation can be generated using “npm run jsdoc” script. The script is added into the package.json file to generate the documentation for the project.
  
 # Class Diagram
-Class diagram for the application is available in the "User Guide.docx" folder located in the root directory of the project.
+Class diagram for the Policy Commission Calculator Service
+
 ![](https://github.com/jpatel200/insurance-agent-commission-app/blob/master/ClassDiagram.jpg)
  
 # Assumptions and Design Considerations
