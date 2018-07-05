@@ -1,5 +1,5 @@
 # Policy Commission Calculator Application
-Policy commission calculator service for computing agents commissions.
+Insurance policy commission calculator service for computing agents commission.
 
 
 # Installation Instructions
