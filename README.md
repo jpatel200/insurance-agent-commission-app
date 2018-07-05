@@ -1,15 +1,19 @@
-# insurance-agent-commission-app
-Policy commission calculator
+# Policy Commission Calculator Application
+Policy commission calculator service for computing agents' commissions.
 
 
 # Installation Instructions
 ## To run the application:
 
-1. Unzip the content from attached “insurance-agent-commission-app.zip” and navigate to the project root directory
-2. Run “npm install” from within project root directory to install application dependencies
-3. Run “npm test” to run through the unit tests
-4. Run “node standalone.js” to run the program in standalone mode. This will use the given data (policy amount, agent hierarchy, commission plan) and computes commission summary.
+1. Clone the projecct git repository using  git clone command.
+
+	git clone https://github.com/jpatel200/insurance-agent-commission-app.git
+	
+2. Navigate to the project root directory
+3. Run “npm install” from within project root directory to install application dependencies
+4. Run “npm test” to run through the unit tests
 5. Run “npm start” to run the application as RestFul service hosted on express server.
+6. Run “node standalone.js” to run the program in standalone mode. This will use the given data (policy amount, agent hierarchy, commission plan) and computes commission summary.
 
 ## WebService detail:
 
@@ -17,49 +21,49 @@ Service endpoint: localhost:3000/api/v.1.0/policy
 Method: POST
 Header Parameter: Content-Type: application/json
 
-##To test the WebService:
+## To test the WebService:
 
-Using REST Client tool ( e.g. Postman ) 
-Submit POST request to endpoint “localhost:3000/api/v.1.0/policy” using request body:
+1. Using REST Client tool ( e.g. Postman ) Submit POST request to endpoint “localhost:3000/api/v.1.0/policy” using request body:
 {
 "policy" : {
 "commissionPlan" : "B",
  "policyAmount": 100000
 },
+
  "agentHierarchy" :{
 	"sellingAgent" : {"agentName" : "Selling Agent", "commission" : 0.02},
               "superAgents":[
-			   { "agentName": "SuperAgent_A", "commission" : 0.0250},
+			   {"agentName": "SuperAgent_A", "commission" : 0.0250},
                { "agentName": "SuperAgent_B", "commission" : 0.0325},
 			   { "agentName": "SuperAgent_C", "commission" : 0.0225}
 
 			]
 }
 }
-3.	WebService will compute agents commission and responds with commission summary payload
-{
+2. WebService will compute agents commission and responds with commission summary payload
+'{
     "commissions": {
         "sellingAgent": 1400,
         "SuperAgent_A": 200,
         "SuperAgent_B": 130,
         "SuperAgent_C": 0
     }
-}
-
+}'
+
 # Project Structure
 
-Insurance-agent-commission-app: root directory
-config: contains configuration and initialization classes for the application 
-jsdoc: contains documentation of the project
-factories: contains factory classes for creating commission plans
-models: contains entity base classes for holding data e.g. Agent, Policy, Agent Hierarchy
-public: contains static contents for the project
-routes: houses webservice routing detail
-server: contains module to run express web server
-service: houses services and controller modules
-tests : houses all unit tests files for the application
-app.js : module contains code to bootstrap webservice
-package.json : Houses app of the dependencies and scripts.
+**Insurance-agent-commission-app**: root directory
+**config**: contains configuration and initialization classes for the application 
+**jsdoc**: contains documentation of the project
+**factories**: contains factory classes for creating commission plans
+**models**: contains entity base classes for holding data e.g. Agent, Policy, Agent Hierarchy
+**public**: contains static contents for the project
+**routes**: houses webservice routing detail
+**server**: contains module to run express web server
+**service**: houses services and controller modules
+**tests** : houses all unit tests files for the application
+**app.js** : module contains code to bootstrap webservice
+**package.json** : Houses app of the dependencies and scripts.
 
 
 # Code Documentation
@@ -75,7 +79,7 @@ The documentation exists within the project structure in the jsdoc folder. The r
 
 # Class Diagram
 Class diagram for the application is available in the "User Guide.docx" folder located in the root directory of the project.
-![Policy Commission Calculator Class Diagram](https://github.com/jpatel200/insurance-agent-commission-app/Class Diagram.jpg)
+![Policy Commission Calculator Class Diagram](https://github.com/jpatel200/insurance-agent-commission-app/ClassDiagram.jpg)
 
  
 # Assumptions and Design Considerations
