@@ -94,7 +94,7 @@ The documentation exists within the project structure in the **jsdoc folder:http
  
 # Class Diagram
 Class diagram for the application is available in the "User Guide.docx" folder located in the root directory of the project.
-![Policy Commission Calculator Class Diagram](https://github.com/jpatel200/insurance-agent-commission-app/ClassDiagram.jpg)
+![](https://github.com/jpatel200/insurance-agent-commission-app/blob/master/ClassDiagram.jpg)
  
 # Assumptions and Design Considerations
 
