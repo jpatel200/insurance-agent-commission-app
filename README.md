@@ -36,25 +36,27 @@ Header Parameter: Content-Type: application/json
 			   {"agentName": "SuperAgent_A", "commission" : 0.0250},
                { "agentName": "SuperAgent_B", "commission" : 0.0325},
 			   { "agentName": "SuperAgent_C", "commission" : 0.0225}
-
 			]
-}
-}
+	}
+  }
 2. WebService will compute agents commission and responds with commission summary payload
-'{
+{
     "commissions": {
         "sellingAgent": 1400,
         "SuperAgent_A": 200,
         "SuperAgent_B": 130,
         "SuperAgent_C": 0
     }
-}'
+}
 
 # Project Structure
 
 **Insurance-agent-commission-app**: root directory
-**config**: contains configuration and initialization classes for the application 
+
+**config**: contains configuration and initialization classes for the application
+
 **jsdoc**: contains documentation of the project
+
 **factories**: contains factory classes for creating commission plans
 **models**: contains entity base classes for holding data e.g. Agent, Policy, Agent Hierarchy
 **public**: contains static contents for the project
