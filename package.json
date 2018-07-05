@@ -1,0 +1,25 @@
+{
+    "name": "insurance-agent-commission-app",
+    "version": "1.0.0",
+    "description": "insurance agent commission calculator application",
+    "main": "index.js",
+    "scripts": {
+        "start": "set NODE_ENV=dev&node app.js",
+        "test": "set NODE_ENV=test&mocha ./tests/*.spec.js",
+        "jsdoc": "jsdoc --debug -r -d ./jsdoc/ -c jsdoc.config.json"
+    },
+    "author": "Jignesh Patel",
+    "license": "HavenLife",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "chai": "4.1.2",
+        "express": "^4.16.3",
+        "fs": "0.0.1-security",
+        "joi": "^13.4.0",
+        "jsdoc": "^3.5.5",
+        "mocha": "5.2.0",
+        "morgan": "^1.9.0",
+        "serve-favicon": "^2.5.0",
+        "winston": "^3.0.0"
+    }
+}

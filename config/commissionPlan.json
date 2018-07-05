@@ -1,0 +1,9 @@
+{
+"commissionPlan" : [
+           {"plan": "A", "sellingAgentCommission" : 0.5, "superAgentCommissions" : [0.05,0,0] },
+           {"plan": "B", "sellingAgentCommission" : 0.7, "superAgentCommissions" : [0.08,0.04,0] }
+        
+        ]
+
+}
+
